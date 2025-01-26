@@ -19,6 +19,10 @@ https://learn.microsoft.com/en-us/linux/packages
 Note: the packages are system independent and IL, so in theory it is sufficient to reinstall the package at each desktop runtime update and start the program once to get the updated binary code.
 Obviously if they update avalonia you need to recompile.
 
+## Using the dark theme on Debian
+
+For using the dark theme on debian the app must be recompiled changing
+
 ## Windows
 
 ## On Windows
