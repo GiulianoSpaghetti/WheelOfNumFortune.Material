@@ -7,9 +7,9 @@
 			 x:Class="WheelOfNumFortune.Pages.HomePage"
 			 x:DataType="pages:HomePage">
 	<StackPanel>
-		<TextBox x:Name="txtCookie" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false"/>
+		<TextBox x:Name="txtCookie" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" />
 		<Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OnTick_Click"/>
-		<TextBox x:Name="txtSolution" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false"/>
+		<TextBox x:Name="txtSolution" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false" AcceptsTab="False"/>
 		<Button x:Name="btnCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Click="CheckSolution_Click" IsEnabled="False"/>
 		<Button x:Name="btnDiscover" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Click="DiscoverLetter_Click" IsEnabled="False"/>
 		<Label HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="lblStatus"/>
