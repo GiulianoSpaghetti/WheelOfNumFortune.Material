@@ -2,7 +2,7 @@
 ## numerone's fortune material
 
 A fortune discover game for windows and linux in avalonia dialect material of Google.
-This is the first project does not use the google's xaml stylesheet, but use the reactive ui of avalonia (it's read multitrheaded)·
+This project does not use the google's xaml stylesheet, but use the reactive ui of avalonia (it's read multitrheaded)·
 
 
 ## Installing using repository (GNU/Linux)
