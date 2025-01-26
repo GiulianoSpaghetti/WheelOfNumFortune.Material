@@ -35,6 +35,14 @@ Obviously if they update avalonia you need to recompile.
 
 ## Screenshots
 
+## Debian
+
+![Schermata del 2025-01-26 11-19-05](https://github.com/user-attachments/assets/7ec8a351-dc90-4367-8394-4df92ee1d7f6)
+![Schermata del 2025-01-26 11-19-09](https://github.com/user-attachments/assets/f103a5e2-e7da-40f7-bec8-fca90143a90c)
+![Schermata del 2025-01-26 11-19-18](https://github.com/user-attachments/assets/ec79744c-c283-4f9c-b47d-7611924fa2d4)
+![Schermata del 2025-01-26 11-19-23](https://github.com/user-attachments/assets/026cf948-1bbc-4a17-a5e8-b26570169d04)
+
+
 ## Windows
 
 <img width="1431" alt="2025-01-26" src="https://github.com/user-attachments/assets/a99e7757-f680-4c46-a5b5-5f9f2eb3c73e" />
