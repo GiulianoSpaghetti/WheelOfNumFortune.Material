@@ -21,7 +21,7 @@ Obviously if they update avalonia you need to recompile.
 
 ## Using the dark theme
 
-For using the dark theme on debian the app must be recompiled adding the parameter RequestedThemeVariant with the value Dark at the App.xaml file.
+For using the dark theme on debian the app must be recompiled adding the parameter RequestedThemeVariant with the value Dark at the Application node to the App.xaml file.
 
 ## Windows
 
