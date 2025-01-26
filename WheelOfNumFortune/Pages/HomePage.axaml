@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:pages="clr-namespace:WheelOfNumFortune.Pages"
+			 x:Class="WheelOfNumFortune.Pages.HomePage"
+			 x:DataType="pages:HomePage">
+	<StackPanel>
+		<TextBox x:Name="txtCookie" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false"/>
+		<Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OnTick_Click"/>
+		<TextBox x:Name="txtSolution" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false"/>
+		<Button x:Name="btnCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Click="CheckSolution_Click" IsEnabled="False"/>
+		<Button x:Name="btnDiscover" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Click="DiscoverLetter_Click" IsEnabled="False"/>
+		<Label HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="lblStatus"/>
+	</StackPanel>
+</UserControl>
