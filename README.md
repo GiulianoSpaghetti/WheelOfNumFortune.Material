@@ -34,7 +34,14 @@ Obviously if they update avalonia you need to recompile.
 
 
 ## Screenshots
-TO DO
+
+## Windows
+
+<img width="1431" alt="2025-01-26" src="https://github.com/user-attachments/assets/a99e7757-f680-4c46-a5b5-5f9f2eb3c73e" />
+<img width="1431" alt="2025-01-26 (3)" src="https://github.com/user-attachments/assets/f3fd89e7-9313-41cc-80f5-d9ef7404ceab" />
+<img width="1431" alt="2025-01-26 (2)" src="https://github.com/user-attachments/assets/bbb104a5-b2c7-455f-b48f-efa2952bbc26" />
+<img width="1431" alt="2025-01-26 (1)" src="https://github.com/user-attachments/assets/bea2a671-da1f-44ca-a013-3c7084c143c9" />
+
 
 ## Knowed Bugs
 
