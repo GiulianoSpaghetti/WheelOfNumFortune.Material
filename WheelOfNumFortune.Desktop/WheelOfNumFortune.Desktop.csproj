@@ -9,11 +9,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
     <StartupObject>WheelOfNumFortune.Desktop.Program</StartupObject>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="icon.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia.BuildServices" Version="0.0.31" />
@@ -34,5 +30,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WheelOfNumFortune\WheelOfNumFortune.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Remove="icon.ico" />
   </ItemGroup>
 </Project>
