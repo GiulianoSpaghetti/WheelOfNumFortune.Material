@@ -36,7 +36,13 @@ https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 Note: the packages are system independent and IL, so in theory it is sufficient to reinstall the package at each desktop runtime update and start the program once to get the updated binary code.
 Obviously if they update avalonia you need to recompile.
 
+## Changing the animations
 
+The animation I found on the example of material of google was circulareasein. It can be found in MainView.axaml in pageslide node the parameters slideouteasing and slideineasing.
+
+Here is the list of animations, obsioulvy it needs to be recompiled.
+
+https://reference.avaloniaui.net/api/Avalonia.Animation.Easings/
 ## Screenshots
 
 ## Debian
