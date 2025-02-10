@@ -66,6 +66,10 @@ https://reference.avaloniaui.net/api/Avalonia.Animation.Easings/
 <img width="1431" alt="2025-01-26 (1)" src="https://github.com/user-attachments/assets/bea2a671-da1f-44ca-a013-3c7084c143c9" />
 
 
+## Trailer
+
+https://photos.app.goo.gl/cE1tsDobHRS1hnvm7
+
 ## Knowed Bugs
 
 There are some escape string are not converted, so the screen may be unfriendly, some times.
