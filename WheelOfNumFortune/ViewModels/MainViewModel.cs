@@ -30,6 +30,7 @@ public class MainViewModel : ViewModelBase
                 risposta = risposta.Replace("\\n", "\r\n");
                 risposta = risposta.Replace("\\t", "    ");
                 risposta = risposta.Replace("\\\"", "\"");
+                risposta = risposta.Replace("\\b", "");
                 risposta = risposta.Trim();
                 sb = new StringBuilder(risposta);
                 for (i = 0; i < sb.Length; i++)
