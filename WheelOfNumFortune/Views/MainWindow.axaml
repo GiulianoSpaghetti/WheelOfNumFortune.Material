@@ -7,6 +7,6 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="WheelOfNumFortune.Views.MainWindow"
         Icon="/Assets/avalonia-icon.ico"
-        Title="WheelOfNumFortune">
+        Title="Wheel of numerone's Fortune">
         <views:MainView />
 </Window>
