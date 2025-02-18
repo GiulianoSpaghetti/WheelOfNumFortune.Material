@@ -8,7 +8,7 @@ namespace wheelofnumfortune_setup
         static void Main()
         {
             {
-                var project = new Project("wheelofnumfortune.avalonia",
+                Project project = new Project("wheelofnumfortune.avalonia",
                                   new Dir(@"[ProgramFiles64Folder]\\wheelofnumfortune.avalonia",
                                       new DirFiles(@"*.*"),
                                       new Dir("runtimes",
