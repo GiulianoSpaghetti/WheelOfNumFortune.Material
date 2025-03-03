@@ -22,7 +22,7 @@ public partial class HomePage : UserControl
     {
 
         s = MainViewModel.Tick();
-        lblStatus.Content = "";
+        lblStatus.Text = "";
         if (MainViewModel.ObtainedResponse())
         {
             txtCookie.Text = s;
@@ -33,7 +33,7 @@ public partial class HomePage : UserControl
         }
         else
         {
-            lblStatus.Content = s;
+            lblStatus.Text = s;
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
@@ -44,25 +44,25 @@ public partial class HomePage : UserControl
     {
         if (MainViewModel.CheckRisposta(txtSolution.Text))
         {
-            lblStatus.Content = "You are right";
+            lblStatus.Text = "You are right";
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;
         }
         else
         {
-            lblStatus.Content = "You are wrong";
+            lblStatus.Text = "You are wrong";
         }
     }
 
     public void DiscoverLetter_Click(object sender, RoutedEventArgs e)
     {
-        lblStatus.Content = "";
+        lblStatus.Text = "";
         if (MainViewModel.DiscoverLetter())
             txtCookie.Text = MainViewModel.getVisualizzazione();
         else
         {
-            lblStatus.Content = "You lost";
+            lblStatus.Text = "You lost";
             txtSolution.IsEnabled = false;
             btnDiscover.IsEnabled = false;
             btnCheck.IsEnabled = false;

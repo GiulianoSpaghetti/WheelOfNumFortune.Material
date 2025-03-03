@@ -12,6 +12,6 @@
 		<TextBox x:Name="txtSolution" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false" AcceptsTab="False"/>
 		<Button x:Name="btnCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Click="CheckSolution_Click" IsEnabled="False"/>
 		<Button x:Name="btnDiscover" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Click="DiscoverLetter_Click" IsEnabled="False"/>
-		<Label HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="lblStatus"/>
+		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="lblStatus"/>
 	</StackPanel>
 </UserControl>
