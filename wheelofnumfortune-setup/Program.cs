@@ -22,21 +22,21 @@ namespace wheelofnumfortune_setup
                                      )
                             ),
                             new Dir(@"%ProgramMenu%",
-                             new ExeFileShortcut("WheelOfNumFortune", "[ProgramFiles64Folder]\\wheelofnumfortune.avalonia\\wheelofnumfortune.avalonia.Desktop.exe", "") { WorkingDirectory = "[INSTALLDIR]" }
+                             new ExeFileShortcut("Wheel of numerone's fortune", "[ProgramFiles64Folder]\\wheelofnumfortune.avalonia\\wheelofnumfortune.Desktop.exe", "") { WorkingDirectory = "[INSTALLDIR]" }
                           )//,
                            //new Property("ALLUSERS","0")
                 );
 
                 project.GUID = new Guid("0ED16B86-0A70-E994-3BBF-1F853749E14B");
-                project.Version = new Version("0.3.0.3");
+                project.Version = new Version("0.4.0.6");
                 project.Platform = Platform.x64;
-                project.SourceBaseDir = "D:\\source\\wheelofnumfortune.avalonia\\wheelofnumfortune.avalonia.Desktop\\bin\\Release\\net9.0-windows10.0.26100.0";
+                project.SourceBaseDir = "F:\\source\\wheelofnumfortune.material\\wheelofnumfortune.Desktop\\bin\\Release\\net9.0-windows10.0.26100.0";
                 project.LicenceFile = "LICENSE.rtf";
-                project.OutDir = "D:\\";
+                project.OutDir = "F:\\";
                 project.ControlPanelInfo.Manufacturer = "Giulio Sorrentino";
-                project.ControlPanelInfo.Name = "WheelOfNumFortune.Avalonia";
-                project.ControlPanelInfo.HelpLink = "https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Avalonia/issues";
-                project.Description = "Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta";
+                project.ControlPanelInfo.Name = "WheelOfNumFortune.Material";
+                project.ControlPanelInfo.HelpLink = "https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Material/issues";
+                project.Description = "Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta nel dialetto material di google di avalonia";
                 //            project.Properties.SetValue("ALLUSERS", 0);
                 project.BuildMsi();
             }

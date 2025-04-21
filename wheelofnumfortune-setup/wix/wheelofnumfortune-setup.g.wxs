@@ -6,8 +6,8 @@
     To suppress generation of this file remove `set ide=true` from the PostBuildEvent of the VS project
 </auto-generated>
 -->
-  <Package Compressed="yes" ProductCode="0ed16b86-0a70-e994-3bbf-1f853779e14f" Name="wheelofnumfortune.avalonia" Language="1033" Version="0.3.0.3" UpgradeCode="0ed16b86-0a70-e994-3bbf-1f853749e14b" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
-    <SummaryInformation Codepage="Windows-1252" Description="Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta" />
+  <Package Compressed="yes" ProductCode="0ed16b86-0a70-e994-3bbf-1f853789e152" Name="wheelofnumfortune.avalonia" Language="1033" Version="0.4.0.6" UpgradeCode="0ed16b86-0a70-e994-3bbf-1f853749e14b" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
+    <SummaryInformation Codepage="Windows-1252" Description="Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta nel dialetto material di google di avalonia" />
     <Media Id="1" Cabinet="wheelofnumfortune.avalonia.cab" EmbedCab="yes" />
 
     <StandardDirectory Id="ProgramFiles64Folder">
@@ -109,6 +109,10 @@
           <File Id="Avalonia.X11.dll_1023622806" Source="Avalonia.X11.dll" />
         </Component>
 
+        <Component Id="Component.DialogHost.Avalonia.dll_2731956462" Guid="0ed16b86-0a70-e994-3bbf-1f85d7973fc4" Bitness="always64">
+          <File Id="DialogHost.Avalonia.dll_2731956462" Source="DialogHost.Avalonia.dll" />
+        </Component>
+
         <Component Id="Component.DynamicData.dll_3698575548" Guid="0ed16b86-0a70-e994-3bbf-1f85f66c8d58" Bitness="always64">
           <File Id="DynamicData.dll_3698575548" Source="DynamicData.dll" />
         </Component>
@@ -119,6 +123,22 @@
 
         <Component Id="Component.LICENSE.rtf_70498411" Guid="0ed16b86-0a70-e994-3bbf-1f85baa7adc9" Bitness="always64">
           <File Id="LICENSE.rtf_70498411" Source="LICENSE.rtf" />
+        </Component>
+
+        <Component Id="Component.Material.Avalonia.dll_1617264134" Guid="0ed16b86-0a70-e994-3bbf-1f85f6aa7a05" Bitness="always64">
+          <File Id="Material.Avalonia.dll_1617264134" Source="Material.Avalonia.dll" />
+        </Component>
+
+        <Component Id="Component.Material.Colors.dll_3430180349" Guid="0ed16b86-0a70-e994-3bbf-1f85bc2af5cf" Bitness="always64">
+          <File Id="Material.Colors.dll_3430180349" Source="Material.Colors.dll" />
+        </Component>
+
+        <Component Id="Component.Material.Ripple.dll_730481746" Guid="0ed16b86-0a70-e994-3bbf-1f85065e0a75" Bitness="always64">
+          <File Id="Material.Ripple.dll_730481746" Source="Material.Ripple.dll" />
+        </Component>
+
+        <Component Id="Component.Material.Styles.dll_1727351179" Guid="0ed16b86-0a70-e994-3bbf-1f85cde3ba87" Bitness="always64">
+          <File Id="Material.Styles.dll_1727351179" Source="Material.Styles.dll" />
         </Component>
 
         <Component Id="Component.MicroCom.Runtime.dll_3848200337" Guid="0ed16b86-0a70-e994-3bbf-1f85b4cc32ca" Bitness="always64">
@@ -149,32 +169,32 @@
           <File Id="Tmds.DBus.Protocol.dll_1107110852" Source="Tmds.DBus.Protocol.dll" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.Desktop.deps.json_2521381128" Guid="0ed16b86-0a70-e994-3bbf-1f8589d1a877" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.Desktop.deps.json_2521381128" Source="wheelofnumfortune.avalonia.Desktop.deps.json" />
+        <Component Id="Component.WheelOfNumFortune.Desktop.deps.json_3830304813" Guid="0ed16b86-0a70-e994-3bbf-1f85a271ab0e" Bitness="always64">
+          <File Id="WheelOfNumFortune.Desktop.deps.json_3830304813" Source="WheelOfNumFortune.Desktop.deps.json" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.Desktop.dll_851339800" Guid="0ed16b86-0a70-e994-3bbf-1f85f03a635b" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.Desktop.dll_851339800" Source="wheelofnumfortune.avalonia.Desktop.dll" />
+        <Component Id="Component.WheelOfNumFortune.Desktop.dll_1326166634" Guid="0ed16b86-0a70-e994-3bbf-1f85d9163292" Bitness="always64">
+          <File Id="WheelOfNumFortune.Desktop.dll_1326166634" Source="WheelOfNumFortune.Desktop.dll" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.Desktop.exe_2535280124" Guid="0ed16b86-0a70-e994-3bbf-1f85df02e0af" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.Desktop.exe_2535280124" Source="wheelofnumfortune.avalonia.Desktop.exe" />
+        <Component Id="Component.WheelOfNumFortune.Desktop.exe_2535233784" Guid="0ed16b86-0a70-e994-3bbf-1f85376cae25" Bitness="always64">
+          <File Id="WheelOfNumFortune.Desktop.exe_2535233784" Source="WheelOfNumFortune.Desktop.exe" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.Desktop.pdb_824446704" Guid="0ed16b86-0a70-e994-3bbf-1f85dfc1802e" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.Desktop.pdb_824446704" Source="wheelofnumfortune.avalonia.Desktop.pdb" />
+        <Component Id="Component.WheelOfNumFortune.Desktop.pdb_1775981028" Guid="0ed16b86-0a70-e994-3bbf-1f85ab7d7bad" Bitness="always64">
+          <File Id="WheelOfNumFortune.Desktop.pdb_1775981028" Source="WheelOfNumFortune.Desktop.pdb" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.Desktop.runtimeconfig.json_1433337547" Guid="0ed16b86-0a70-e994-3bbf-1f85f168895e" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.Desktop.runtimeconfig.json_1433337547" Source="wheelofnumfortune.avalonia.Desktop.runtimeconfig.json" />
+        <Component Id="Component.WheelOfNumFortune.Desktop.runtimeconfig.json_1284560493" Guid="0ed16b86-0a70-e994-3bbf-1f852ca9ec4b" Bitness="always64">
+          <File Id="WheelOfNumFortune.Desktop.runtimeconfig.json_1284560493" Source="WheelOfNumFortune.Desktop.runtimeconfig.json" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.dll_547788175" Guid="0ed16b86-0a70-e994-3bbf-1f851c2391d7" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.dll_547788175" Source="wheelofnumfortune.avalonia.dll" />
+        <Component Id="Component.WheelOfNumFortune.dll_3891170035" Guid="0ed16b86-0a70-e994-3bbf-1f854757f8fe" Bitness="always64">
+          <File Id="WheelOfNumFortune.dll_3891170035" Source="WheelOfNumFortune.dll" />
         </Component>
 
-        <Component Id="Component.wheelofnumfortune.avalonia.pdb_2102456503" Guid="0ed16b86-0a70-e994-3bbf-1f85cdb05eef" Bitness="always64">
-          <File Id="wheelofnumfortune.avalonia.pdb_2102456503" Source="wheelofnumfortune.avalonia.pdb" />
+        <Component Id="Component.WheelOfNumFortune.pdb_1115756821" Guid="0ed16b86-0a70-e994-3bbf-1f857011a3bb" Bitness="always64">
+          <File Id="WheelOfNumFortune.pdb_1115756821" Source="WheelOfNumFortune.pdb" />
         </Component>
 
         <Component Id="Component.WinRT.Runtime.dll_1279053106" Guid="0ed16b86-0a70-e994-3bbf-1f85d4246aae" Bitness="always64">
@@ -205,8 +225,8 @@
 
     <StandardDirectory Id="ProgramMenuFolder">
 
-      <Component Id="Component.WheelOfNumFortune" Guid="0ed16b86-0a70-e994-3bbf-1f85fd292772" Bitness="always64">
-        <Shortcut Id="ProgramMenuFolder.WheelOfNumFortune" WorkingDirectory="INSTALLDIR" Target="[ProgramFiles64Folder]\wheelofnumfortune.avalonia\wheelofnumfortune.avalonia.Desktop.exe" Name="WheelOfNumFortune.lnk" />
+      <Component Id="Component._...heel20of20numerone27s20fortune" Guid="0ed16b86-0a70-e994-3bbf-1f859dd91393" Bitness="always64">
+        <Shortcut Id="ProgramMenuFolder._...heel20of20numerone27s20fortune" WorkingDirectory="INSTALLDIR" Target="[ProgramFiles64Folder]\wheelofnumfortune.avalonia\wheelofnumfortune.Desktop.exe" Name="Wheel of numerone's fortune.lnk" />
 
         <CreateFolder />
 
@@ -218,11 +238,11 @@
 
     <WixUI Id="WixUI_Minimal" xmlns="http://wixtoolset.org/schemas/v4/wxs/ui" />
 
-    <WixVariable Id="WixUILicenseRtf" Value="D:\source\wheelofnumfortune.avalonia\wheelofnumfortune.avalonia.Desktop\bin\Release\net9.0-windows10.0.26100.0\LICENSE.rtf" />
+    <WixVariable Id="WixUILicenseRtf" Value="F:\source\wheelofnumfortune.material\wheelofnumfortune.Desktop\bin\Release\net9.0-windows10.0.26100.0\LICENSE.rtf" />
 
     <UIRef Id="WixUI_ErrorProgressText" />
 
-    <Property Id="ARPHELPLINK" Value="https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Avalonia/issues" />
+    <Property Id="ARPHELPLINK" Value="https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Material/issues" />
 
     <Feature Id="Complete" Title="Complete" Level="1" AllowAbsent="yes">
       <ComponentRef Id="Component.Avalonia.Base.dll_2209613414" />
@@ -249,9 +269,14 @@
       <ComponentRef Id="Component.Avalonia.Vulkan.dll_2382983963" />
       <ComponentRef Id="Component.Avalonia.Win32.dll_2739249126" />
       <ComponentRef Id="Component.Avalonia.X11.dll_1023622806" />
+      <ComponentRef Id="Component.DialogHost.Avalonia.dll_2731956462" />
       <ComponentRef Id="Component.DynamicData.dll_3698575548" />
       <ComponentRef Id="Component.HarfBuzzSharp.dll_2246397308" />
       <ComponentRef Id="Component.LICENSE.rtf_70498411" />
+      <ComponentRef Id="Component.Material.Avalonia.dll_1617264134" />
+      <ComponentRef Id="Component.Material.Colors.dll_3430180349" />
+      <ComponentRef Id="Component.Material.Ripple.dll_730481746" />
+      <ComponentRef Id="Component.Material.Styles.dll_1727351179" />
       <ComponentRef Id="Component.MicroCom.Runtime.dll_3848200337" />
       <ComponentRef Id="Component.Microsoft.Windows.SDK.NET.dll_2731349129" />
       <ComponentRef Id="Component.ReactiveUI.dll_3918125795" />
@@ -259,18 +284,18 @@
       <ComponentRef Id="Component.Splat.dll_2081889109" />
       <ComponentRef Id="Component.System.Reactive.dll_3290616429" />
       <ComponentRef Id="Component.Tmds.DBus.Protocol.dll_1107110852" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.Desktop.deps.json_2521381128" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.Desktop.dll_851339800" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.Desktop.exe_2535280124" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.Desktop.pdb_824446704" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.Desktop.runtimeconfig.json_1433337547" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.dll_547788175" />
-      <ComponentRef Id="Component.wheelofnumfortune.avalonia.pdb_2102456503" />
+      <ComponentRef Id="Component.WheelOfNumFortune.Desktop.deps.json_3830304813" />
+      <ComponentRef Id="Component.WheelOfNumFortune.Desktop.dll_1326166634" />
+      <ComponentRef Id="Component.WheelOfNumFortune.Desktop.exe_2535233784" />
+      <ComponentRef Id="Component.WheelOfNumFortune.Desktop.pdb_1775981028" />
+      <ComponentRef Id="Component.WheelOfNumFortune.Desktop.runtimeconfig.json_1284560493" />
+      <ComponentRef Id="Component.WheelOfNumFortune.dll_3891170035" />
+      <ComponentRef Id="Component.WheelOfNumFortune.pdb_1115756821" />
       <ComponentRef Id="Component.WinRT.Runtime.dll_1279053106" />
       <ComponentRef Id="Component.av_libglesv2.dll_923902129" />
       <ComponentRef Id="Component.libHarfBuzzSharp.dll_372981271" />
       <ComponentRef Id="Component.libSkiaSharp.dll_1324562481" />
-      <ComponentRef Id="Component.WheelOfNumFortune" />
+      <ComponentRef Id="Component._...heel20of20numerone27s20fortune" />
     </Feature>
   </Package>
 </Wix>

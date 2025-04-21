@@ -9,7 +9,8 @@
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >ⓒ Giulio Sorrentino 2025, some right reserved</TextBlock>
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >Version 0.4</TextBlock>
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >A simple fortune discover game for Windows and GNU/Linux.</TextBlock>
-		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >This app is under GPL v3 or, in your humble opinion, any later version</TextBlock>
+		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >The sentences are taken from https://helloacm.com/fortune/</TextBlock>
+		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >C# is property of Microsoft Corporation, Avalonia is a registered trademark and Material is property of Google LCC</TextBlock>
 		<Button Click="OnSito_Click">More informations</Button>
 	</StackPanel>
 </UserControl>
