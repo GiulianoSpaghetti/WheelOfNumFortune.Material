@@ -10,36 +10,24 @@ The game is a family game to play together, to get to know English, so imagine y
 This is the registered motto.
 
 
-## Installing using repository (GNU/Linux)
-Follow the guide at https://learn.microsoft.com/it-it/dotnet/core/install/linux-debian first
-
-Then follow the guide at http://numeronesoft.ddns.net:8080
-
-and then update and install wheelofnumfortune.avalonia
-
-Prerequisites:
-
-https://learn.microsoft.com/en-us/linux/packages
-
-Note: the packages are system independent and IL, so in theory it is sufficient to reinstall the package at each desktop runtime update and start the program once to get the updated binary code.
-Obviously if they update avalonia you need to recompile.
-
 ## Using the dark theme
 
 For using the dark theme on debian the app must be recompiled adding the parameter RequestedThemeVariant with the value Dark at the Application node to the App.xaml file.
 
-## Windows
+## How to get
 
-## On Windows
+On Pling (https://www.pling.com/p/2296517/)
 
-[![winget](https://user-images.githubusercontent.com/49786146/159123313-3bdafdd3-5130-4b0d-9003-40618390943a.png)](https://marticliment.com/wingetui/share?pid=GiulioSorrentino.wheelofnumfortune.Avalonia&pname=wheelofnumfortune.Avalonia&psource=Winget:%20winget)
 
 Prerequisites:
 
+## Windows
+
 https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
-Note: the packages are system independent and IL, so in theory it is sufficient to reinstall the package at each desktop runtime update and start the program once to get the updated binary code.
-Obviously if they update avalonia you need to recompile.
+## Debian
+
+https://learn.microsoft.com/en-us/linux/packages
 
 ## Changing the animations
 
