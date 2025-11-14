@@ -56,7 +56,7 @@ https://reference.avaloniaui.net/api/Avalonia.Animation.Easings/
 
 ## Trailer
 
-https://photos.app.goo.gl/cE1tsDobHRS1hnvm7
+https://youtu.be/JQEn7kkuUkk
 
 ## Knowed Bugs
 
