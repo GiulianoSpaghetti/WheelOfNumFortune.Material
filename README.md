@@ -16,16 +16,16 @@ For using the dark theme on debian the app must be recompiled adding the paramet
 
 ## How to get
 
-On Pling (https://www.pling.com/p/2296517/)
+[![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2296517/)
 
 
-Prerequisites:
+## Prerequisites:
 
-## Windows
+### Windows
 
 https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
-## Debian
+### Debian
 
 https://learn.microsoft.com/en-us/linux/packages
 
