@@ -3,6 +3,7 @@
 
 A fortune discover game for windows and linux in avalonia dialect material of Google.
 This project does not use the google's xaml stylesheet, but use the reactive ui of avalonia (it's read multitrheaded)·
+Use the rest api of the helloacm.com
 
 ##   The use case
 The game is a family game to play together, to get to know English, so imagine you and your partner playing "guess the English sentence" and she shouts "as so long, not is so long".
