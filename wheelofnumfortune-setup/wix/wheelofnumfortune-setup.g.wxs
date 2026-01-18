@@ -6,7 +6,7 @@
     To suppress generation of this file remove `set ide=true` from the PostBuildEvent of the VS project
 </auto-generated>
 -->
-  <Package Compressed="yes" ProductCode="0ed16b86-0a70-e994-3bbf-1f853789e152" Name="wheelofnumfortune.avalonia" Language="1033" Version="0.4.0.6" UpgradeCode="0ed16b86-0a70-e994-3bbf-1f853749e14b" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
+  <Package Compressed="yes" ProductCode="0ed16b86-0a70-e994-3bbf-1f853789f150" Name="wheelofnumfortune.avalonia" Language="1033" Version="0.4.1.4" UpgradeCode="0ed16b86-0a70-e994-3bbf-1f853749e14b" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
     <SummaryInformation Codepage="Windows-1252" Description="Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta nel dialetto material di google di avalonia" />
     <Media Id="1" Cabinet="wheelofnumfortune.avalonia.cab" EmbedCab="yes" />
 
@@ -35,6 +35,10 @@
 
         <Component Id="Component.Avalonia.Desktop.dll_3971862678" Guid="0ed16b86-0a70-e994-3bbf-1f8537d48c39" Bitness="always64">
           <File Id="Avalonia.Desktop.dll_3971862678" Source="Avalonia.Desktop.dll" />
+        </Component>
+
+        <Component Id="Component.Avalonia.Diagnostics.dll_3673751075" Guid="0ed16b86-0a70-e994-3bbf-1f85c6ae4c8e" Bitness="always64">
+          <File Id="Avalonia.Diagnostics.dll_3673751075" Source="Avalonia.Diagnostics.dll" />
         </Component>
 
         <Component Id="Component.Avalonia.Dialogs.dll_2040551559" Guid="0ed16b86-0a70-e994-3bbf-1f850e47475e" Bitness="always64">
@@ -77,10 +81,6 @@
           <File Id="Avalonia.OpenGL.dll_647794011" Source="Avalonia.OpenGL.dll" />
         </Component>
 
-        <Component Id="Component.Avalonia.ReactiveUI.dll_2378999181" Guid="0ed16b86-0a70-e994-3bbf-1f85e4f838ea" Bitness="always64">
-          <File Id="Avalonia.ReactiveUI.dll_2378999181" Source="Avalonia.ReactiveUI.dll" />
-        </Component>
-
         <Component Id="Component.Avalonia.Remote.Protocol.dll_3655575721" Guid="0ed16b86-0a70-e994-3bbf-1f850160bec8" Bitness="always64">
           <File Id="Avalonia.Remote.Protocol.dll_3655575721" Source="Avalonia.Remote.Protocol.dll" />
         </Component>
@@ -99,6 +99,10 @@
 
         <Component Id="Component.Avalonia.Vulkan.dll_2382983963" Guid="0ed16b86-0a70-e994-3bbf-1f85f4ee117f" Bitness="always64">
           <File Id="Avalonia.Vulkan.dll_2382983963" Source="Avalonia.Vulkan.dll" />
+        </Component>
+
+        <Component Id="Component.Avalonia.Win32.Automation.dll_298585675" Guid="0ed16b86-0a70-e994-3bbf-1f85448a8d34" Bitness="always64">
+          <File Id="Avalonia.Win32.Automation.dll_298585675" Source="Avalonia.Win32.Automation.dll" />
         </Component>
 
         <Component Id="Component.Avalonia.Win32.dll_2739249126" Guid="0ed16b86-0a70-e994-3bbf-1f85645692f4" Bitness="always64">
@@ -149,6 +153,10 @@
           <File Id="Microsoft.Windows.SDK.NET.dll_2731349129" Source="Microsoft.Windows.SDK.NET.dll" />
         </Component>
 
+        <Component Id="Component.ReactiveUI.Avalonia.dll_863222097" Guid="0ed16b86-0a70-e994-3bbf-1f85756a7010" Bitness="always64">
+          <File Id="ReactiveUI.Avalonia.dll_863222097" Source="ReactiveUI.Avalonia.dll" />
+        </Component>
+
         <Component Id="Component.ReactiveUI.dll_3918125795" Guid="0ed16b86-0a70-e994-3bbf-1f85d0314599" Bitness="always64">
           <File Id="ReactiveUI.dll_3918125795" Source="ReactiveUI.dll" />
         </Component>
@@ -157,8 +165,20 @@
           <File Id="SkiaSharp.dll_3340697564" Source="SkiaSharp.dll" />
         </Component>
 
+        <Component Id="Component.Splat.Builder.dll_4248492517" Guid="0ed16b86-0a70-e994-3bbf-1f85f85ab14d" Bitness="always64">
+          <File Id="Splat.Builder.dll_4248492517" Source="Splat.Builder.dll" />
+        </Component>
+
+        <Component Id="Component.Splat.Core.dll_2294562620" Guid="0ed16b86-0a70-e994-3bbf-1f85df91c753" Bitness="always64">
+          <File Id="Splat.Core.dll_2294562620" Source="Splat.Core.dll" />
+        </Component>
+
         <Component Id="Component.Splat.dll_2081889109" Guid="0ed16b86-0a70-e994-3bbf-1f858dfea1c7" Bitness="always64">
           <File Id="Splat.dll_2081889109" Source="Splat.dll" />
+        </Component>
+
+        <Component Id="Component.Splat.Logging.dll_3927608992" Guid="0ed16b86-0a70-e994-3bbf-1f85cbf8fc51" Bitness="always64">
+          <File Id="Splat.Logging.dll_3927608992" Source="Splat.Logging.dll" />
         </Component>
 
         <Component Id="Component.System.Reactive.dll_3290616429" Guid="0ed16b86-0a70-e994-3bbf-1f85cf43f1fb" Bitness="always64">
@@ -238,11 +258,11 @@
 
     <WixUI Id="WixUI_Minimal" xmlns="http://wixtoolset.org/schemas/v4/wxs/ui" />
 
-    <WixVariable Id="WixUILicenseRtf" Value="F:\source\wheelofnumfortune.material\wheelofnumfortune.Desktop\bin\Release\net9.0-windows10.0.26100.0\LICENSE.rtf" />
+    <WixVariable Id="WixUILicenseRtf" Value="E:\wheelofnumfortune.material\wheelofnumfortune.Desktop\bin\Release\net10.0-windows10.0.26100.0\LICENSE.rtf" />
 
     <UIRef Id="WixUI_ErrorProgressText" />
 
-    <Property Id="ARPHELPLINK" Value="https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Material/issues" />
+    <Property Id="ARPHELPLINK" Value="https://www.opencode.net/numerone/WheelOfNumFortune-Material/-/issues" />
 
     <Feature Id="Complete" Title="Complete" Level="1" AllowAbsent="yes">
       <ComponentRef Id="Component.Avalonia.Base.dll_2209613414" />
@@ -251,6 +271,7 @@
       <ComponentRef Id="Component.Avalonia.Controls.dll_1069925238" />
       <ComponentRef Id="Component.Avalonia.DesignerSupport.dll_3212352128" />
       <ComponentRef Id="Component.Avalonia.Desktop.dll_3971862678" />
+      <ComponentRef Id="Component.Avalonia.Diagnostics.dll_3673751075" />
       <ComponentRef Id="Component.Avalonia.Dialogs.dll_2040551559" />
       <ComponentRef Id="Component.Avalonia.dll_1780315680" />
       <ComponentRef Id="Component.Avalonia.Fonts.Inter.dll_3749337265" />
@@ -261,12 +282,12 @@
       <ComponentRef Id="Component.Avalonia.MicroCom.dll_60737909" />
       <ComponentRef Id="Component.Avalonia.Native.dll_1618410196" />
       <ComponentRef Id="Component.Avalonia.OpenGL.dll_647794011" />
-      <ComponentRef Id="Component.Avalonia.ReactiveUI.dll_2378999181" />
       <ComponentRef Id="Component.Avalonia.Remote.Protocol.dll_3655575721" />
       <ComponentRef Id="Component.Avalonia.Skia.dll_956337296" />
       <ComponentRef Id="Component.Avalonia.Themes.Fluent.dll_3455937585" />
       <ComponentRef Id="Component.Avalonia.Themes.Simple.dll_445904476" />
       <ComponentRef Id="Component.Avalonia.Vulkan.dll_2382983963" />
+      <ComponentRef Id="Component.Avalonia.Win32.Automation.dll_298585675" />
       <ComponentRef Id="Component.Avalonia.Win32.dll_2739249126" />
       <ComponentRef Id="Component.Avalonia.X11.dll_1023622806" />
       <ComponentRef Id="Component.DialogHost.Avalonia.dll_2731956462" />
@@ -279,9 +300,13 @@
       <ComponentRef Id="Component.Material.Styles.dll_1727351179" />
       <ComponentRef Id="Component.MicroCom.Runtime.dll_3848200337" />
       <ComponentRef Id="Component.Microsoft.Windows.SDK.NET.dll_2731349129" />
+      <ComponentRef Id="Component.ReactiveUI.Avalonia.dll_863222097" />
       <ComponentRef Id="Component.ReactiveUI.dll_3918125795" />
       <ComponentRef Id="Component.SkiaSharp.dll_3340697564" />
+      <ComponentRef Id="Component.Splat.Builder.dll_4248492517" />
+      <ComponentRef Id="Component.Splat.Core.dll_2294562620" />
       <ComponentRef Id="Component.Splat.dll_2081889109" />
+      <ComponentRef Id="Component.Splat.Logging.dll_3927608992" />
       <ComponentRef Id="Component.System.Reactive.dll_3290616429" />
       <ComponentRef Id="Component.Tmds.DBus.Protocol.dll_1107110852" />
       <ComponentRef Id="Component.WheelOfNumFortune.Desktop.deps.json_3830304813" />

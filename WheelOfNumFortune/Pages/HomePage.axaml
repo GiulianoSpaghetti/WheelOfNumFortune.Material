@@ -7,11 +7,10 @@
 			 x:Class="WheelOfNumFortune.Pages.HomePage"
 			 x:DataType="pages:HomePage">
 	<StackPanel>
-		<TextBox x:Name="txtCookie" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" />
-		<Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OnTick_Click"/>
-		<TextBox x:Name="txtSolution" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false" AcceptsTab="False"/>
-		<Button x:Name="btnCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Click="CheckSolution_Click" IsEnabled="False"/>
-		<Button x:Name="btnDiscover" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Click="DiscoverLetter_Click" IsEnabled="False"/>
-		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="lblStatus"/>
+		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding Visualizzazione}"/>
+		<Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding Tick}"/>
+		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="{Binding AbilitaRisposta}" AcceptsTab="False" Text="{Binding Risposta, Mode=TwoWay}"/>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Command="{Binding CheckRisposta}" IsEnabled="{Binding AbilitaCheckRisposta}"/>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Command="{Binding DiscoverLetter}" IsEnabled="{Binding AbilitaDiscoverLetter}"/>
 	</StackPanel>
 </UserControl>

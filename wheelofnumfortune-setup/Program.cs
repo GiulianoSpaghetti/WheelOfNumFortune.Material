@@ -28,14 +28,14 @@ namespace wheelofnumfortune_setup
                 );
 
                 project.GUID = new Guid("0ED16B86-0A70-E994-3BBF-1F853749E14B");
-                project.Version = new Version("0.4.0.6");
+                project.Version = new Version("0.4.1.4");
                 project.Platform = Platform.x64;
-                project.SourceBaseDir = "F:\\source\\wheelofnumfortune.material\\wheelofnumfortune.Desktop\\bin\\Release\\net9.0-windows10.0.26100.0";
+                project.SourceBaseDir = "E:\\wheelofnumfortune.material\\wheelofnumfortune.Desktop\\bin\\Release\\net10.0-windows10.0.26100.0";
                 project.LicenceFile = "LICENSE.rtf";
-                project.OutDir = "F:\\";
+                project.OutDir = "C:\\Users\\numer\\Downloads";
                 project.ControlPanelInfo.Manufacturer = "Giulio Sorrentino";
                 project.ControlPanelInfo.Name = "WheelOfNumFortune.Material";
-                project.ControlPanelInfo.HelpLink = "https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Material/issues";
+                project.ControlPanelInfo.HelpLink = "https://www.opencode.net/numerone/WheelOfNumFortune-Material/-/issues";
                 project.Description = "Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta nel dialetto material di google di avalonia";
                 //            project.Properties.SetValue("ALLUSERS", 0);
                 project.BuildMsi();

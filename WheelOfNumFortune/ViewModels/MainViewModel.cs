@@ -1,21 +1,57 @@
-﻿using System.Net.Http;
-using System.Threading.Tasks;
+﻿using Avalonia.Threading;
+using Material.Styles.Controls;
+using ReactiveUI;
 using System;
+using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace WheelOfNumFortune.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {
-    private static Task<HttpResponseMessage> httpResponse;
-    private static HttpClient client = new HttpClient();
-    private static Task<string> sTask;
-    private static String risposta;
-    private static String visualizzazione;
-    private static int i;
-    private static StringBuilder sb;
-    private static Random random = new Random();
-    public static string Tick()
+    private  Task<HttpResponseMessage> httpResponse;
+    private  HttpClient client = new HttpClient();
+    private  Task<string> sTask;
+
+    private  String _risposta;
+    private String _visualizzazione;
+    private String _status;
+    private string parola;
+    private bool _abilitaDiscoverLetter;
+    private bool _abilitaCheckRisposta;
+
+    private bool _abilitaRisposta;
+    public bool AbilitaRisposta { get => _abilitaRisposta; set => this.RaiseAndSetIfChanged(ref _abilitaRisposta, value); }
+
+    public bool AbilitaCheckRisposta { get => _abilitaCheckRisposta; set => this.RaiseAndSetIfChanged(ref _abilitaCheckRisposta, value); }
+
+    public bool AbilitaDiscoverLetter { get => _abilitaDiscoverLetter; set => this.RaiseAndSetIfChanged(ref _abilitaDiscoverLetter, value); }
+    public String Risposta { get => _risposta; set => this.RaiseAndSetIfChanged(ref _risposta, value); }
+    public String Visualizzazione { get => _visualizzazione; private set => this.RaiseAndSetIfChanged(ref _visualizzazione, value); }
+    private  int i;
+    public string Status { get => _status; set
+        {
+            this.RaiseAndSetIfChanged(ref _status, value);
+            SnackbarHost.Post(_status, null, DispatcherPriority.Normal);
+        }
+    }
+    private StringBuilder sb;
+    private  Random random = new Random();
+    public ICommand Tick { get; private set; }
+    public ICommand CheckRisposta { get; private set; }
+
+    public ICommand DiscoverLetter { get; private set; }
+
+    public MainViewModel()
+    {
+        Tick = ReactiveCommand.Create(tick);
+        CheckRisposta = ReactiveCommand.Create(checkRisposta);
+        DiscoverLetter = ReactiveCommand.Create(discoverLetter);
+        tick();
+    }
+    public void tick()
     {
         try
         {
@@ -25,14 +61,14 @@ public class MainViewModel : ViewModelBase
             {
 
                 sTask = httpResponse.Result.Content.ReadAsStringAsync();
-                risposta = sTask.Result;
-                risposta = risposta.Substring(1, risposta.Length - 2);
-                risposta = risposta.Replace("\\n", "\r\n");
-                risposta = risposta.Replace("\\t", "    ");
-                risposta = risposta.Replace("\\\"", "\"");
-                risposta = risposta.Replace("\\b", "");
-                risposta = risposta.Trim();
-                sb = new StringBuilder(risposta);
+                parola = sTask.Result;
+                parola = parola.Substring(1, parola.Length - 2);
+                parola = parola.Replace("\\n", "\r\n");
+                parola = parola.Replace("\\t", "    ");
+                parola = parola.Replace("\\\"", "\"");
+                parola = parola.Replace("\\b", "");
+                parola = parola.Trim();
+                sb = new StringBuilder(parola);
                 for (i = 0; i < sb.Length; i++)
                     switch (sb[i])
                     {
@@ -93,48 +129,64 @@ public class MainViewModel : ViewModelBase
 
 
                     }
-                visualizzazione = sb.ToString();
+                Visualizzazione = sb.ToString();
+                AbilitaRisposta = true;
+                AbilitaDiscoverLetter = true;
+                AbilitaCheckRisposta = true;
             }
             else
             {
-                visualizzazione = $"The HTTP status code is ${httpResponse.Result.StatusCode}";
+                Status = $"The HTTP status code is ${httpResponse.Result.StatusCode}";
             }
         }
         catch (InvalidOperationException ex)
         {
-            return ex.Message;
+            Status = ex.Message;
+            AbilitaRisposta = false;
+            AbilitaDiscoverLetter = false;
+            AbilitaCheckRisposta = false;
         }
         catch (AggregateException ex)
         {
-            return ex.Message;
+            Status = ex.Message;
+            AbilitaRisposta = false;
+            AbilitaDiscoverLetter = false;
+            AbilitaCheckRisposta = false;
+
         }
-        return visualizzazione;
     }
-    public static bool CheckRisposta(String s)
+    private void checkRisposta()
     {
-        return s == risposta;
+        if (parola == Risposta)
+        {
+            Status = "You are right";
+            AbilitaDiscoverLetter = false;
+            AbilitaCheckRisposta = false;
+        }
+        else
+            Status = "You are wrong";
     }
 
 
-    public static String getVisualizzazione()
-    {
-        return visualizzazione;
-    }
-    public static bool DiscoverLetter()
+    private void discoverLetter()
     {
         i = random.Next(0, sb.Length);
-        while (sb[i] != '*' && visualizzazione.IndexOf("*") != -1)
+        while (sb[i] != '*' && Visualizzazione.IndexOf("*") != -1)
         {
             i++;
             if (i == sb.Length)
                 i = 0;
         }
-        sb[i] = risposta[i];
-        visualizzazione = sb.ToString();
-        return visualizzazione.IndexOf('*') != -1;
+        sb[i] = parola[i];
+        Visualizzazione = sb.ToString();
+        if (Visualizzazione.IndexOf('*') == -1)
+        {
+            Status = "You have lost";
+            AbilitaDiscoverLetter = false;
+        }
     }
 
-    public static bool ObtainedResponse()
+    public bool ObtainedResponse()
     {
         bool ex = false;
         try
