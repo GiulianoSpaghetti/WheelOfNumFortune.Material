@@ -17,6 +17,30 @@ For using the dark theme on debian the app must be recompiled adding the paramet
 
 ## How to get
 
+## How to download
+## On Android
+
+[![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.wheelofnumfortune)
+
+## Installing using repository (GNU/Linux)
+
+Follow the guide at https://learn.microsoft.com/it-it/dotnet/core/install/linux-debian first
+
+Then follow the guide at http://numeronesoft.ddns.net:8080
+
+and then update and install wheelofnumfortune.avalonia
+
+Prerequisites:
+
+https://learn.microsoft.com/en-us/linux/packages
+
+Note: the packages are system independent and IL, so in theory it is sufficient to reinstall the package at each desktop runtime update and start the program once to get 
+the updated binary code.
+
+Obviously if they update avalonia you need to recompile.
+
+## Windows and Unix
+
 [![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2296517/)
 
 
@@ -26,7 +50,7 @@ For using the dark theme on debian the app must be recompiled adding the paramet
 
 https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 
-### Debian
+### Unix
 
 https://learn.microsoft.com/en-us/linux/packages
 
