@@ -6,7 +6,7 @@
     To suppress generation of this file remove `set ide=true` from the PostBuildEvent of the VS project
 </auto-generated>
 -->
-  <Package Compressed="yes" ProductCode="0ed16b86-0a70-e994-3bbf-1f853789f150" Name="wheelofnumfortune.avalonia" Language="1033" Version="0.4.1.4" UpgradeCode="0ed16b86-0a70-e994-3bbf-1f853749e14b" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
+  <Package Compressed="yes" ProductCode="0ed16b86-0a70-e994-3bbf-1f854759e14b" Name="wheelofnumfortune.avalonia" Language="1033" Version="1.0" UpgradeCode="0ed16b86-0a70-e994-3bbf-1f853749e14b" Manufacturer="Giulio Sorrentino" InstallerVersion="200">
     <SummaryInformation Codepage="Windows-1252" Description="Programma di enigmistica che consiste nello scoprire una frase caricata da internet scoprendo manualmente una lettera per volta nel dialetto material di google di avalonia" />
     <Media Id="1" Cabinet="wheelofnumfortune.avalonia.cab" EmbedCab="yes" />
 
@@ -15,14 +15,6 @@
 
         <Component Id="Component.Avalonia.Base.dll_2209613414" Guid="0ed16b86-0a70-e994-3bbf-1f85806d87b9" Bitness="always64">
           <File Id="Avalonia.Base.dll_2209613414" Source="Avalonia.Base.dll" />
-        </Component>
-
-        <Component Id="Component.Avalonia.Controls.ColorPicker.dll_176162664" Guid="0ed16b86-0a70-e994-3bbf-1f85700749bd" Bitness="always64">
-          <File Id="Avalonia.Controls.ColorPicker.dll_176162664" Source="Avalonia.Controls.ColorPicker.dll" />
-        </Component>
-
-        <Component Id="Component.Avalonia.Controls.DataGrid.dll_1516810240" Guid="0ed16b86-0a70-e994-3bbf-1f85b2bce3ec" Bitness="always64">
-          <File Id="Avalonia.Controls.DataGrid.dll_1516810240" Source="Avalonia.Controls.DataGrid.dll" />
         </Component>
 
         <Component Id="Component.Avalonia.Controls.dll_1069925238" Guid="0ed16b86-0a70-e994-3bbf-1f85aea01eba" Bitness="always64">
@@ -35,10 +27,6 @@
 
         <Component Id="Component.Avalonia.Desktop.dll_3971862678" Guid="0ed16b86-0a70-e994-3bbf-1f8537d48c39" Bitness="always64">
           <File Id="Avalonia.Desktop.dll_3971862678" Source="Avalonia.Desktop.dll" />
-        </Component>
-
-        <Component Id="Component.Avalonia.Diagnostics.dll_3673751075" Guid="0ed16b86-0a70-e994-3bbf-1f85c6ae4c8e" Bitness="always64">
-          <File Id="Avalonia.Diagnostics.dll_3673751075" Source="Avalonia.Diagnostics.dll" />
         </Component>
 
         <Component Id="Component.Avalonia.Dialogs.dll_2040551559" Guid="0ed16b86-0a70-e994-3bbf-1f850e47475e" Bitness="always64">
@@ -93,10 +81,6 @@
           <File Id="Avalonia.Themes.Fluent.dll_3455937585" Source="Avalonia.Themes.Fluent.dll" />
         </Component>
 
-        <Component Id="Component.Avalonia.Themes.Simple.dll_445904476" Guid="0ed16b86-0a70-e994-3bbf-1f854cb7637f" Bitness="always64">
-          <File Id="Avalonia.Themes.Simple.dll_445904476" Source="Avalonia.Themes.Simple.dll" />
-        </Component>
-
         <Component Id="Component.Avalonia.Vulkan.dll_2382983963" Guid="0ed16b86-0a70-e994-3bbf-1f85f4ee117f" Bitness="always64">
           <File Id="Avalonia.Vulkan.dll_2382983963" Source="Avalonia.Vulkan.dll" />
         </Component>
@@ -111,6 +95,10 @@
 
         <Component Id="Component.Avalonia.X11.dll_1023622806" Guid="0ed16b86-0a70-e994-3bbf-1f85bae59f7c" Bitness="always64">
           <File Id="Avalonia.X11.dll_1023622806" Source="Avalonia.X11.dll" />
+        </Component>
+
+        <Component Id="Component.CardFramework.avalonia.dll_972414548" Guid="0ed16b86-0a70-e994-3bbf-1f857a82a3ae" Bitness="always64">
+          <File Id="CardFramework.avalonia.dll_972414548" Source="CardFramework.avalonia.dll" />
         </Component>
 
         <Component Id="Component.DialogHost.Avalonia.dll_2731956462" Guid="0ed16b86-0a70-e994-3bbf-1f85d7973fc4" Bitness="always64">
@@ -258,7 +246,7 @@
 
     <WixUI Id="WixUI_Minimal" xmlns="http://wixtoolset.org/schemas/v4/wxs/ui" />
 
-    <WixVariable Id="WixUILicenseRtf" Value="E:\wheelofnumfortune.material\wheelofnumfortune.Desktop\bin\Release\net10.0-windows10.0.26100.0\LICENSE.rtf" />
+    <WixVariable Id="WixUILicenseRtf" Value="E:\10\wheelofnumfortune.material\wheelofnumfortune.Desktop\bin\Release\net10.0-windows10.0.26100.0\LICENSE.rtf" />
 
     <UIRef Id="WixUI_ErrorProgressText" />
 
@@ -266,12 +254,9 @@
 
     <Feature Id="Complete" Title="Complete" Level="1" AllowAbsent="yes">
       <ComponentRef Id="Component.Avalonia.Base.dll_2209613414" />
-      <ComponentRef Id="Component.Avalonia.Controls.ColorPicker.dll_176162664" />
-      <ComponentRef Id="Component.Avalonia.Controls.DataGrid.dll_1516810240" />
       <ComponentRef Id="Component.Avalonia.Controls.dll_1069925238" />
       <ComponentRef Id="Component.Avalonia.DesignerSupport.dll_3212352128" />
       <ComponentRef Id="Component.Avalonia.Desktop.dll_3971862678" />
-      <ComponentRef Id="Component.Avalonia.Diagnostics.dll_3673751075" />
       <ComponentRef Id="Component.Avalonia.Dialogs.dll_2040551559" />
       <ComponentRef Id="Component.Avalonia.dll_1780315680" />
       <ComponentRef Id="Component.Avalonia.Fonts.Inter.dll_3749337265" />
@@ -285,11 +270,11 @@
       <ComponentRef Id="Component.Avalonia.Remote.Protocol.dll_3655575721" />
       <ComponentRef Id="Component.Avalonia.Skia.dll_956337296" />
       <ComponentRef Id="Component.Avalonia.Themes.Fluent.dll_3455937585" />
-      <ComponentRef Id="Component.Avalonia.Themes.Simple.dll_445904476" />
       <ComponentRef Id="Component.Avalonia.Vulkan.dll_2382983963" />
       <ComponentRef Id="Component.Avalonia.Win32.Automation.dll_298585675" />
       <ComponentRef Id="Component.Avalonia.Win32.dll_2739249126" />
       <ComponentRef Id="Component.Avalonia.X11.dll_1023622806" />
+      <ComponentRef Id="Component.CardFramework.avalonia.dll_972414548" />
       <ComponentRef Id="Component.DialogHost.Avalonia.dll_2731956462" />
       <ComponentRef Id="Component.DynamicData.dll_3698575548" />
       <ComponentRef Id="Component.HarfBuzzSharp.dll_2246397308" />

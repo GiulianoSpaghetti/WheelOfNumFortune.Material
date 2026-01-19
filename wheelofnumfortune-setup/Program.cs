@@ -28,9 +28,9 @@ namespace wheelofnumfortune_setup
                 );
 
                 project.GUID = new Guid("0ED16B86-0A70-E994-3BBF-1F853749E14B");
-                project.Version = new Version("0.4.1.4");
+                project.Version = new Version("1.0");
                 project.Platform = Platform.x64;
-                project.SourceBaseDir = "E:\\wheelofnumfortune.material\\wheelofnumfortune.Desktop\\bin\\Release\\net10.0-windows10.0.26100.0";
+                project.SourceBaseDir = "E:\\10\\wheelofnumfortune.material\\wheelofnumfortune.Desktop\\bin\\Release\\net10.0-windows10.0.26100.0";
                 project.LicenceFile = "LICENSE.rtf";
                 project.OutDir = "C:\\Users\\numer\\Downloads";
                 project.ControlPanelInfo.Manufacturer = "Giulio Sorrentino";

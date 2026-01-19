@@ -183,6 +183,7 @@ public class MainViewModel : ViewModelBase
         {
             Status = "You have lost";
             AbilitaDiscoverLetter = false;
+            AbilitaCheckRisposta = false;
         }
     }
 

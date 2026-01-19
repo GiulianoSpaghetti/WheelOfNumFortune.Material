@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/">
     <File Path="Directory.Packages.props" />
   </Folder>
+  <Project Path="C:/Users/numer/source/repos/10/WheelOfNumFortune.Material/wheelofnumfortune-setup/wheelofnumfortune-setup.csproj" />
   <Project Path="WheelOfNumFortune.Android/WheelOfNumFortune.Android.csproj" />
   <Project Path="WheelOfNumFortune.Browser/WheelOfNumFortune.Browser.csproj" />
   <Project Path="WheelOfNumFortune.Desktop/WheelOfNumFortune.Desktop.csproj" />

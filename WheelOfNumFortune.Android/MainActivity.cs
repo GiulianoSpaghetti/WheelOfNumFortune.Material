@@ -7,7 +7,7 @@ using ReactiveUI.Avalonia;
 namespace WheelOfNumFortune.Android;
 
 [Activity(
-    Label = "WheelOfNumFortune.Android",
+    Label = "Wheel  of numerone s Fortune",
     Theme = "@style/MyTheme.NoActionBar",
     Icon = "@drawable/icon",
     MainLauncher = true,
