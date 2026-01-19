@@ -14,7 +14,6 @@
     <PackageVersion Include="Avalonia.iOS" Version="11.3.11" />
     <PackageVersion Include="Avalonia.Browser" Version="11.3.11" />
     <PackageVersion Include="Avalonia.Android" Version="11.3.11" />
-    <PackageVersion Include="CardFramework.avalonia" Version="1.5.3" />
     <PackageVersion Include="DialogHost.Avalonia" Version="0.10.4" />
     <PackageVersion Include="HarfBuzzSharp" Version="8.3.1.2" />
     <PackageVersion Include="HarfBuzzSharp.NativeAssets.Linux" Version="8.3.1.2" />
