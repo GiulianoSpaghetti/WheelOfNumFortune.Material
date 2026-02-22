@@ -15,14 +15,12 @@ This is the registered motto.
 
 For using the dark theme on debian the app must be recompiled adding the parameter RequestedThemeVariant with the value Dark at the Application node to the App.xaml file.
 
-## How to get
-
 ## How to download
-## On Android
+### On Android
 
 [![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.wheelofnumfortune)
 
-## Installing using repository (GNU/Linux)
+### Installing using repository (GNU/Linux)
 
 Follow the guide at https://learn.microsoft.com/it-it/dotnet/core/install/linux-debian first
 
@@ -39,16 +37,21 @@ the updated binary code.
 
 Obviously if they update avalonia you need to recompile.
 
-## Windows and Unix
+### Unix
 
 [![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2296517/)
+
+
+### Windows
+
+[![winget](https://user-images.githubusercontent.com/49786146/159123331-729ae9f2-4cf9-439b-8515-16a4ef991089.png)](https://marticliment.com/unigetui/share?name=wheelofnumfortune.avalonia&id=GiulioSorrentino.wheelofnumfortune.avalonia&sourceName=winget&managerName=WinGet)
 
 
 ## Prerequisites:
 
 ### Windows
 
-https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
+https://marticliment.com/unigetui/share?name=Microsoft+.NET+Windows+Desktop+Runtime+10.0&id=Microsoft.DotNet.DesktopRuntime.10&sourceName=winget&managerName=WinGet
 
 ### Unix
 
