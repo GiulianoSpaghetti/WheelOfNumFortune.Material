@@ -44,7 +44,7 @@ Obviously if they update avalonia you need to recompile.
 
 ### Windows
 
-[![winget](https://user-images.githubusercontent.com/49786146/159123331-729ae9f2-4cf9-439b-8515-16a4ef991089.png)](https://marticliment.com/unigetui/share?name=wheelofnumfortune.avalonia&id=GiulioSorrentino.wheelofnumfortune.avalonia&sourceName=winget&managerName=WinGet)
+    unigetui://giuliosorrentino&#46wheelofnumfortune&#46avalonia
 
 
 ## Prerequisites:
