@@ -39,16 +39,9 @@ public class MainViewModel : ViewModelBase
     }
     private StringBuilder sb;
     private  Random random = new Random();
-    public ICommand Tick { get; private set; }
-    public ICommand CheckRisposta { get; private set; }
-
-    public ICommand DiscoverLetter { get; private set; }
 
     public MainViewModel()
     {
-        Tick = ReactiveCommand.Create(tick);
-        CheckRisposta = ReactiveCommand.Create(checkRisposta);
-        DiscoverLetter = ReactiveCommand.Create(discoverLetter);
         tick();
     }
     public void tick()
@@ -155,7 +148,7 @@ public class MainViewModel : ViewModelBase
 
         }
     }
-    private void checkRisposta()
+    public void checkRisposta()
     {
         if (parola == Risposta)
         {
@@ -168,7 +161,7 @@ public class MainViewModel : ViewModelBase
     }
 
 
-    private void discoverLetter()
+    public void discoverLetter()
     {
         i = random.Next(0, sb.Length);
         while (sb[i] != '*' && Visualizzazione.IndexOf("*") != -1)

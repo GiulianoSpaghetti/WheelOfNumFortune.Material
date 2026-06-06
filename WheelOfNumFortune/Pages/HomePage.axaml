@@ -4,13 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:pages="clr-namespace:WheelOfNumFortune.Pages"
+ 			 xmlns:viewModels="clr-namespace:WheelOfNumFortune.ViewModels"
 			 x:Class="WheelOfNumFortune.Pages.HomePage"
-			 x:DataType="pages:HomePage">
+				 x:DataType="viewModels:MainViewModel">
 	<StackPanel>
 		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding Visualizzazione}"/>
-		<Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding Tick}"/>
+		<Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding tick}"/>
 		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="{Binding AbilitaRisposta}" AcceptsTab="False" Text="{Binding Risposta, Mode=TwoWay}"/>
-		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Command="{Binding CheckRisposta}" IsEnabled="{Binding AbilitaCheckRisposta}"/>
-		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Command="{Binding DiscoverLetter}" IsEnabled="{Binding AbilitaDiscoverLetter}"/>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Check Solution" Command="{Binding checkRisposta}" IsEnabled="{Binding AbilitaCheckRisposta}"/>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Discover letter" Command="{Binding discoverLetter}" IsEnabled="{Binding AbilitaDiscoverLetter}"/>
 	</StackPanel>
 </UserControl>
