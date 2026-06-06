@@ -1,3 +1,5 @@
+[![.NET AVALONIA Build](https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Material/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/GiulianoSpaghetti/WheelOfNumFortune.Material/actions/workflows/dotnet-desktop.yml)
+
 # WheelOfNumFortune
 ## wheel of numerone's fortune material
 
