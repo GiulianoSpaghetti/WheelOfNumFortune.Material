@@ -56,7 +56,7 @@ public class MainViewModel : ViewModelBase
                 sTask = httpResponse.Result.Content.ReadAsStringAsync();
                 parola = sTask.Result;
                 parola = parola.Substring(1, parola.Length - 2);
-                parola = parola.Replace("\\n", "\r\n");
+                parola = parola.Replace("\\n", System.Environment.NewLine);
                 parola = parola.Replace("\\t", "    ");
                 parola = parola.Replace("\\\"", "\"");
                 parola = parola.Replace("\\b", "");
