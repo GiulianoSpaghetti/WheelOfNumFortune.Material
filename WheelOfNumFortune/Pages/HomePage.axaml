@@ -2,17 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:i="https://github.com/projektanker/icons.avalonia"
-			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:pages="clr-namespace:WheelOfNumFortune.Pages"
  			 xmlns:viewModels="clr-namespace:WheelOfNumFortune.ViewModels"
 			 x:Class="WheelOfNumFortune.Pages.HomePage"
 				 x:DataType="viewModels:MainViewModel">
 	<StackPanel>
 		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding Visualizzazione}"/>
-		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding tick}" i:Attached.Icon="mdi-cookie-refresh" />
-		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="{Binding AbilitaRisposta}" AcceptsTab="False" Text="{Binding Risposta, Mode=TwoWay}"/>
-		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding checkRisposta}" IsEnabled="{Binding AbilitaCheckRisposta}" i:Attached.Icon="mdi-check" />
-		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding discoverLetter}" IsEnabled="{Binding AbilitaDiscoverLetter}" i:Attached.Icon="mdi-magnify-expand" />
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding tick}" Content="{materialIcons:MaterialIconExt Kind=CookieRefresh}" />
+		<TextBox TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="{Binding AbilitaRisposta}" MinWidth="250" AcceptsTab="False" Text="{Binding Risposta, Mode=TwoWay}"/>
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding checkRisposta}" IsEnabled="{Binding AbilitaCheckRisposta}" Content="{materialIcons:MaterialIconExt Kind=Check}" />
+		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding discoverLetter}" IsEnabled="{Binding AbilitaDiscoverLetter}" Content="{materialIcons:MaterialIconExt Kind=MagnifyExpand}" />
 	</StackPanel>
 </UserControl>

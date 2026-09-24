@@ -2,8 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:i="https://github.com/projektanker/icons.avalonia"
-			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:pages="clr-namespace:WheelOfNumFortune.Pages"
              x:Class="WheelOfNumFortune.Pages.InfoPage">
 	<StackPanel>
@@ -13,6 +12,6 @@
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >A simple fortune discover game for Windows and GNU/Linux.</TextBlock>
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >The sentences are taken from https://helloacm.com/fortune/</TextBlock>
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >C# is property of Microsoft Corporation, Avalonia is a registered trademark and Material is property of Google LCC</TextBlock>
-		<Button Click="OnSito_Click" i:Attached.Icon="mdi-web-box"/>
+		<Button Click="OnSito_Click" Content="{materialIcons:MaterialIconExt Kind=Web}" />
 	</StackPanel>
 </UserControl>
