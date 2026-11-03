@@ -1,4 +1,4 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+<ContentPage xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -14,4 +14,4 @@
 		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding checkRisposta}" IsEnabled="{Binding AbilitaCheckRisposta}" Content="{materialIcons:MaterialIconExt Kind=Check}" />
 		<Button HorizontalAlignment="Center" VerticalAlignment="Center" Command="{Binding discoverLetter}" IsEnabled="{Binding AbilitaDiscoverLetter}" Content="{materialIcons:MaterialIconExt Kind=MagnifyExpand}" />
 	</StackPanel>
-</UserControl>
+</ContentPage>
